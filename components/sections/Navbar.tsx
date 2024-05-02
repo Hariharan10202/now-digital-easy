@@ -17,8 +17,8 @@ import Image from "next/image";
 import DomainSVG from "../../public/assets/navbar/domain.svg";
 import Logo from "../../public/assets/navbar/logo.svg";
 import Cart from "../../public/assets/navbar/cart.svg";
-// import DemoSVG from "../public/assets/navbar/demo.svg";
-// import DemoBg from "../public/assets/navbar/demobg.svg";
+import DemoSVG from "../../public/assets/navbar/demo.svg";
+import DemoBg from "../../public/assets/navbar/demobg.svg";
 
 const Build: { title: string; href: string; description: string }[] = [
   {
@@ -209,11 +209,13 @@ export function Navbar() {
                     </div>
                   </div>
                 </div>
-                {/* <div className="h-full">
-                <div className="w-[400px] relative">
-                <Image alt="gradient" className="w-full" src={DemoBg} />
+                <div className="h-full">
+                  <div className="w-[400px] h-[520px] bg-gradient-to-l from-[#D2D5FD] via-[#D8DAF8] to-[#FEF3E2] flex items-center justify-center">
+                    <div className="w-full h-full relative flex items-center justify-center">
+                      <Image src={DemoSVG} alt="demo" />
+                    </div>
+                  </div>
                 </div>
-              </div> */}
               </div>
             </NavigationMenuContent>
           </NavigationMenuItem>
