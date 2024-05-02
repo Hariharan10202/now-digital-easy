@@ -9,10 +9,11 @@ const Testimonials = () => {
           Gateway to Digital Success
         </h1>
         <p className="text-2xl font-semibold text-center">
-          'Create' your digital footprint seamlessly, 'Manage' your operations
-          and connections effectively, and 'Grow' your outreach exponentially.
-          Experience the power of streamlined solutions designed to Launch,
-          Organize, and Amplify your business in the digital landscape.
+          &apos;Create&apos; your digital footprint seamlessly,
+          &apos;Manage&apos; your operations and connections effectively, and
+          &apos;Grow&apos; your outreach exponentially. Experience the power of
+          streamlined solutions designed to Launch, Organize, and Amplify your
+          business in the digital landscape.
         </p>
       </div>
       <div className="relative flex items-center justify-center w-full h-[70vh] mt-10">
