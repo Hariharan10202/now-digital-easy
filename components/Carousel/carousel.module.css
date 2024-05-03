@@ -3,7 +3,7 @@
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 960px;
+  width: 60%;
 }
 
 .slider::before,
@@ -27,14 +27,14 @@
 }
 
 .slide-track {
-  animation: scroll 40s linear infinite;
+  animation: scroll 10s linear infinite;
   display: flex;
   width: calc(250px * 16);
 }
 
 .slide {
   height: 100px;
-  width: 250px;
+  width: 150px;
 }
 
 @keyframes scroll {
@@ -43,5 +43,12 @@
   }
   100% {
     transform: translateX(calc(-250px * 8));
+  }
+}
+
+@media (min-width: 1024px) {
+  .slide {
+    height: 50px;
+    width: 250px;
   }
 }

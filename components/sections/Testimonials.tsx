@@ -1,14 +1,15 @@
 import Image from "next/image";
 import Platform from "../../public/assets/platform.svg";
+import Box from "../ui/Box";
 
 const Testimonials = () => {
   return (
-    <div className="px-20 py-10">
-      <div className="text-center w-[70%] m-auto">
-        <h1 className="text-[60px] font-extrabold">
+    <Box className="flex flex-col gap-y-10">
+      <div className="text-center lg:w-[70%] w-[85%] m-auto flex flex-col gap-y-5">
+        <span className="lg:text-[60px] text-[40px] font-extrabold font-sans">
           Gateway to Digital Success
-        </h1>
-        <p className="text-2xl font-semibold text-center">
+        </span>
+        <p className="text-2xl font-semibold text-center font-serif">
           &apos;Create&apos; your digital footprint seamlessly,
           &apos;Manage&apos; your operations and connections effectively, and
           &apos;Grow&apos; your outreach exponentially. Experience the power of
@@ -16,10 +17,10 @@ const Testimonials = () => {
           business in the digital landscape.
         </p>
       </div>
-      <div className="relative flex items-center justify-center w-full h-[70vh] mt-10">
-        <Image src={Platform} alt="platform" fill />
+      <div className="relative flex items-center justify-center w-full 2xl:h-[100vh] xl:h-[80vh] lg:h-[60vh] h-fit overflow-hidden p-4">
+        <Image src={Platform} alt="platform" className="lg:w-[80%] w-full" />
       </div>
-    </div>
+    </Box>
   );
 };
 

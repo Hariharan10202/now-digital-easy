@@ -1,33 +1,36 @@
 import Image from "next/image";
 import cta from "../../public/assets/CTA/image.svg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import Box from "../ui/Box";
 
 const CTA = () => {
   return (
-    <div className="py-10 px-20">
-      <div className="py-10 px-20 px flex justify-between rounded-3xl items-center bg-gradient-to-r from-[rgb(210,213,253)] to-[rgb(216,218,248)] via-[rgb(239,232,231)] to-[rgb(254,243,226)]">
-        <div className="flex flex-col gap-y-5">
-          <h1 className="text-[42px] font-extrabold">
+    <Box>
+      <div className="py-10 lg:px-20 px-10 px flex justify-between rounded-3xl items-center bg-gradient-to-r from-[rgb(210,213,253)] to-[rgb(216,218,248)] via-[rgb(239,232,231)] to-[rgb(254,243,226)]">
+        <div className="flex flex-col lg:gap-y-5 gap-y-3">
+          <span className="lg:text-[42px] text-[28px] font-extrabold font-sans">
             For what you are waiting for?
-          </h1>
-          <span className="text-[20px]">
+          </span>
+          <span className="lg:text-[20px] text-[16px] font-serif">
             12,000+ global businesses found an empowering digital
             transformation. Its your turn.
           </span>
           <div>
-            <button className="flex items-center justify-center gap-2 px-10 py-5 rounded-full bg-bg-primary">
-              <span className="text-white text-xl font-extrabold">
+            <button className="flex items-center justify-center gap-2 lg:px-10 px-5 lg:py-5 py-3 rounded-full bg-bg-primary">
+              <span className="text-white lg:text-xl text-[14px] font-extrabold">
                 Start Now
               </span>
               <MdOutlineKeyboardArrowRight size={30} color="white" />
             </button>
           </div>
         </div>
-        <div className="relative w-[280px] h-[280px] justify-center flex items-center">
-          <Image src={cta} alt="cta" />
+        <div className="md:block hidden">
+          <div className="relative lg:w-[280px] w-[200px] lg:h-[280px] h-[200px] justify-center flex items-center">
+            <Image src={cta} alt="cta" />
+          </div>
         </div>
       </div>
-    </div>
+    </Box>
   );
 };
 
