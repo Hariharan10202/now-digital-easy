@@ -19,7 +19,7 @@ const Customers = () => {
       <div className="flex flex-col gap-y-5">
         <div className="flex gap-5 lg:flex-row flex-col">
           {/* Customer 1 */}
-          <div className="h-[300px] bg-gradient-to-r from-[rgb(210,213,253)] to-[rgb(216,218,248)] via-[rgb(239,232,231)] to-[rgb(254,243,226)] relative flex-[1.2]">
+          <div className="h-fit bg-gradient-to-r from-[rgb(210,213,253)] to-[rgb(216,218,248)] via-[rgb(239,232,231)] to-[rgb(254,243,226)] relative flex-[1.2]">
             <Image
               className="right-0 absolute"
               src={customer1}
@@ -73,7 +73,7 @@ const Customers = () => {
 
         <div className="flex gap-5 lg:flex-row flex-col">
           {/* Customer 3 */}
-          <div className="h-[300px] bg-gradient-to-r from-[rgb(210,213,253)] to-[rgb(216,218,248)] via-[rgb(239,232,231)] to-[rgb(254,243,226)] relative flex-1">
+          <div className="h-fit bg-gradient-to-r from-[rgb(210,213,253)] to-[rgb(216,218,248)] via-[rgb(239,232,231)] to-[rgb(254,243,226)] relative flex-1">
             <Image
               className="right-0 absolute"
               src={customer3}
@@ -99,7 +99,7 @@ const Customers = () => {
           </div>
 
           {/* Customer 4 */}
-          <div className="h-[300px] bg-gradient-to-r from-[rgb(210,213,253)] to-[rgb(216,218,248)] via-[rgb(239,232,231)] to-[rgb(254,243,226)] relative flex-[1.2]">
+          <div className="h-fit bg-gradient-to-r from-[rgb(210,213,253)] to-[rgb(216,218,248)] via-[rgb(239,232,231)] to-[rgb(254,243,226)] relative flex-[1.2]">
             <Image
               className="right-0 absolute"
               src={customer4}
