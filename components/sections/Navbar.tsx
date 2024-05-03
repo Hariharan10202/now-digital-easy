@@ -272,14 +272,16 @@ export function Navbar() {
         </NavigationMenuList>
       </NavigationMenu>
       <div className="flex items-center gap-5">
-        <div className="flex items-center gap-5 pl-5">
-          <div className="flex items-center gap-5">
-            <button className="outline-none py-2 px-3 text-bg-primary border-2 rounded-lg font-semibold border-bg-primary text-[14px]">
-              Log In
-            </button>
-            <button className="outline-none py-2 px-3 text-white bg-bg-primary rounded-lg font-semibold text-[14px]">
-              Sign Up
-            </button>
+        <div className="lg:block hidden">
+          <div className="flex items-center gap-5 pl-5">
+            <div className="flex items-center gap-5">
+              <button className="outline-none py-2 px-3 text-bg-primary border-2 rounded-lg font-semibold border-bg-primary text-[14px]">
+                Log In
+              </button>
+              <button className="outline-none py-2 px-3 text-white bg-bg-primary rounded-lg font-semibold text-[14px]">
+                Sign Up
+              </button>
+            </div>
           </div>
         </div>
         <div className="flex items-center gap-5">
