@@ -35,7 +35,7 @@ const Services = () => {
           with targeted, highly relevant and personalized experiences.
         </span>
       </div>
-      <div className="flex py-10 lg:flex-row flex-col-reverse gap-10 lg:p-[100px]">
+      <div className="flex py-10 lg:flex-row flex-col-reverse gap-10 lg:px-[120px]">
         <div className="lg:flex-[2] min-h-[300px] border border-black flex items-center justify-center">
           GIF goes here
         </div>

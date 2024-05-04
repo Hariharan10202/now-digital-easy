@@ -4,6 +4,9 @@ import "./globals.css";
 import UIProvider from "@/Providers/UIProvider";
 import "primereact/resources/primereact.css";
 import "primereact/resources/themes/lara-light-indigo/theme.css";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 

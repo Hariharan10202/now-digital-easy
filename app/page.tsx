@@ -1,3 +1,4 @@
+import Business from "@/components/SwiperComponent/Business";
 import CTA from "@/components/sections/CTA";
 import Customers from "@/components/sections/Customers";
 import Footer from "@/components/sections/Footer";
@@ -12,6 +13,9 @@ const page = () => {
       <Navbar />
       <section>
         <Hero />
+      </section>
+      <section>
+        <Business />
       </section>
       <section>
         <Testimonials />
