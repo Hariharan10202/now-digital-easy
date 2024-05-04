@@ -7,8 +7,8 @@ const CTA = () => {
   return (
     <Box>
       <div className="py-10 lg:px-20 px-10 px flex justify-between rounded-3xl items-center bg-gradient-to-r from-[rgb(210,213,253)] to-[rgb(216,218,248)] via-[rgb(239,232,231)] to-[rgb(254,243,226)]">
-        <div className="flex flex-col lg:gap-y-5 gap-y-3">
-          <span className="lg:text-[42px] text-[28px] font-extrabold font-sans">
+        <div className="flex flex-col lg:gap-y-5 gap-y-2">
+          <span className="lg:text-[42px] text-[24px] font-extrabold font-sans">
             For what you are waiting for?
           </span>
           <span className="lg:text-[20px] text-[16px] font-serif">

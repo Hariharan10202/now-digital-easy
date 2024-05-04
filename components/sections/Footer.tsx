@@ -15,7 +15,7 @@ const Footer = () => {
     <div className="lg:pt-20 pt-10">
       <div className="w-full bg-gradient-to-r from-blue-200 via-blue-400 to-blue-200 lg:px-20 px-10 lg:pt-20 pt-10 lg:pb-10 pb-5">
         <div className="flex items-center justify-between lg:flex-row flex-col gap-y-5">
-          <div className="flex lg:gap-20 md:justify-start justify-center gap-10">
+          <div className="flex lg:gap-20 md:justify-start justify-center gap-10 md:flex-nowrap flex-wrap">
             <div className="flex flex-col gap-y-2 text-center lg:text-left lg:[&_span]:text-[14px] [&_span]:text-[12px]">
               <h3 className="font-semibold lg:text-[18px] text-[14px] ">
                 Company
@@ -57,7 +57,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col gap-y-2 lg:items-end items-center">
-            <h1 className="font-semibold">
+            <h1 className="font-semibold text-center">
               Transform Your Business into Digital Organisation
             </h1>
             <div className="flex gap-5 items-center justify-center">

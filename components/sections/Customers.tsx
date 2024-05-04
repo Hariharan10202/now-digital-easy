@@ -8,11 +8,11 @@ import Box from "../ui/Box";
 const Customers = () => {
   return (
     <Box>
-      <div className="flex flex-col gap-y-2 mb-10">
-        <span className="text-3xl text-[#494F57] font-extrabold">
+      <div className="flex flex-col gap-y-2 md:mb-10 mb-4">
+        <span className="md:text-3xl text-xl text-[#494F57] font-extrabold">
           People just love working with us!
         </span>
-        <span className="text-4xl font-extrabold">
+        <span className="md:text-4xl text-xl font-extrabold">
           Digitalized Business Happy Customers That’s Impact
         </span>
       </div>

@@ -76,10 +76,11 @@ const Lists = [
 
 const Business = () => {
   return (
-    <div className="lg:px-20 p-10">
+    <div className="lg:px-20 sm:p-10 p-3">
       <div className="mx-auto w-[80%] lg:w-[60%] mb-10">
-        <h1 className="text-[60px] font-sans font-extrabold text-center">
-          Build Your Business In One Single Platform
+        <h1 className="md:text-[60px] text-[26px] font-sans font-extrabold text-center">
+          <span className="text-bg-primary">Build</span> Your Business In One
+          Single Platform
         </h1>
       </div>
       <Swiper
@@ -119,7 +120,7 @@ const Business = () => {
             <div className={styles.card}>
               <div className={styles.header}>
                 <div className="absolute top-[30%] left-5 flex items-center justify-center gap-10">
-                  <h1 className="text-2xl text-white font-bold">
+                  <h1 className="text-2xl text-white font-extrabold">
                     {list.title}
                   </h1>
                   <div className="w-[70px] h-[70px] bg-white rounded-full flex items-center justify-center">
@@ -129,8 +130,10 @@ const Business = () => {
               </div>
               <div className={styles.content}>
                 <div>
-                  <h1 className="font-bold">{list.subtitle}</h1>
-                  <p>{list.desc}</p>
+                  <h1 className="font-extrabold text-[18px] font-sans">
+                    {list.subtitle}
+                  </h1>
+                  <p className="font-serif">{list.desc}</p>
                 </div>
                 <p className="text-bg-primary font-bold text-[16px] underline">
                   Know more

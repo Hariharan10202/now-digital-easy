@@ -26,11 +26,11 @@ const Services = () => {
 
   return (
     <Box>
-      <div className="text-center flex flex-col gap-y-5 w-[70%] m-auto">
-        <h1 className="text-3xl font-extrabold font-sans">
+      <div className="text-center flex flex-col gap-y-5 md:w-[70%] w-full m-auto">
+        <h1 className="md:text-3xl text-xl font-extrabold font-sans">
           Businesses hire us because of the results we provide.
         </h1>
-        <span className="text-xl font-semibold font-serif">
+        <span className="md:text-xl text-[16px] font-semibold font-serif">
           We transform businesses wholly, across all the digital touch-points
           with targeted, highly relevant and personalized experiences.
         </span>
@@ -53,7 +53,9 @@ const Services = () => {
               <div className="relative lg:w-[60px] w-[40px] lg:h-[60px] h-[40px] flex items-center justify-center">
                 <Image src={item.icon} alt={item.name} className="fill-white" />
               </div>
-              <h2 className="text-[24px] font-bold">{item.name}</h2>
+              <h2 className="md:text-[24px] text-[16px] font-bold">
+                {item.name}
+              </h2>
             </div>
           ))}
         </div>

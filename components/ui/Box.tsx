@@ -8,7 +8,11 @@ interface BoxProps {
 }
 
 const Box = ({ children, className }: BoxProps) => {
-  return <div className={`${className} lg:p-20 p-10`}>{children}</div>;
+  return (
+    <div className={`${className} lg:px-20 lg:py-10 sm:p-10 p-3`}>
+      {children}
+    </div>
+  );
 };
 
 export default Box;

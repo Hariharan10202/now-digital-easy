@@ -5,11 +5,11 @@ import Box from "../ui/Box";
 const Testimonials = () => {
   return (
     <Box className="flex flex-col gap-y-10">
-      <div className="text-center lg:w-[70%] w-[85%] m-auto flex flex-col gap-y-5">
-        <span className="lg:text-[60px] text-[40px] font-extrabold font-sans">
+      <div className="text-center md:w-[70%] w-full m-auto flex flex-col gap-y-5">
+        <span className="lg:text-[60px] text-[30px] font-extrabold font-sans">
           Gateway to Digital Success
         </span>
-        <p className="text-2xl font-semibold text-center font-serif">
+        <p className="md:text-2xl text-[16px] font-semibold text-center font-serif">
           &apos;Create&apos; your digital footprint seamlessly,
           &apos;Manage&apos; your operations and connections effectively, and
           &apos;Grow&apos; your outreach exponentially. Experience the power of
