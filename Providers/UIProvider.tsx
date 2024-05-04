@@ -1,6 +1,5 @@
 "use client";
 import { PrimeReactProvider } from "primereact/api";
-import Tailwind from "primereact/passthrough/tailwind";
 import React from "react";
 
 type UIProviderProps = {
@@ -8,11 +7,7 @@ type UIProviderProps = {
 };
 
 const UIProvider = ({ children }: UIProviderProps) => {
-  return (
-    <PrimeReactProvider value={{ unstyled: true, pt: Tailwind }}>
-      {children}
-    </PrimeReactProvider>
-  );
+  return <PrimeReactProvider>{children}</PrimeReactProvider>;
 };
 
 export default UIProvider;

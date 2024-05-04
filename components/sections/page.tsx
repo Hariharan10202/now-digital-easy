@@ -1,4 +1,4 @@
-import Cart from "@/components/sections/Cart";
+import Cart from "@/components/sections/Cart/Cart";
 import CartIcon from "../../public/assets/navbar/cart.svg";
 import Image from "next/image";
 

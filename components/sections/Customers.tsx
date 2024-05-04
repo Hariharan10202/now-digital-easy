@@ -20,13 +20,9 @@ const Customers = () => {
         <div className="flex gap-5 lg:flex-row flex-col">
           {/* Customer 1 */}
           <div className="h-fit bg-gradient-to-r from-[rgb(210,213,253)] to-[rgb(216,218,248)] via-[rgb(239,232,231)] to-[rgb(254,243,226)] relative flex-[1.2]">
-            <Image
-              className="right-0 absolute"
-              src={customer1}
-              alt="Anandh Michel"
-              width={180}
-              height={180}
-            />
+            <div className="right-0 absolute sm:w-[180px] sm:h-[180px] w-[130px] h-[130px]">
+              <Image className="w-full" src={customer1} alt="Anandh Michel" />
+            </div>
             <div className="p-5 flex h-full flex-col justify-around gap-y-5">
               <div className="flex">
                 <p className="text-[16px] font-semibold lg:lg:w-[70%] w-[50%]">
@@ -46,13 +42,9 @@ const Customers = () => {
 
           {/* Customer 2 */}
           <div className="bg-gradient-to-r from-[rgb(210,213,253)] to-[rgb(216,218,248)] via-[rgb(239,232,231)] to-[rgb(254,243,226)] relative flex-1">
-            <Image
-              className="right-0 absolute"
-              src={customer2}
-              alt="Anandh Michel"
-              width={180}
-              height={180}
-            />
+            <div className="right-0 absolute sm:w-[180px] sm:h-[180px] w-[130px] h-[130px]">
+              <Image className="w-full" src={customer2} alt="Anandh Michel" />
+            </div>
             <div className="p-5 flex h-full flex-col justify-around gap-y-5">
               <div className="flex">
                 <p className="text-[16px] font-semibold lg:w-[70%] w-[50%]">
@@ -74,13 +66,9 @@ const Customers = () => {
         <div className="flex gap-5 lg:flex-row flex-col">
           {/* Customer 3 */}
           <div className="h-fit bg-gradient-to-r from-[rgb(210,213,253)] to-[rgb(216,218,248)] via-[rgb(239,232,231)] to-[rgb(254,243,226)] relative flex-1">
-            <Image
-              className="right-0 absolute"
-              src={customer3}
-              alt="Anandh Michel"
-              width={180}
-              height={180}
-            />
+            <div className="right-0 absolute sm:w-[180px] sm:h-[180px] w-[130px] h-[130px]">
+              <Image className="w-full" src={customer3} alt="Anandh Michel" />
+            </div>
             <div className="p-5 flex h-full flex-col justify-around gap-y-5">
               <div className="flex">
                 <p className="text-[16px] font-semibold lg:w-[70%] w-[50%]">
@@ -100,13 +88,9 @@ const Customers = () => {
 
           {/* Customer 4 */}
           <div className="h-fit bg-gradient-to-r from-[rgb(210,213,253)] to-[rgb(216,218,248)] via-[rgb(239,232,231)] to-[rgb(254,243,226)] relative flex-[1.2]">
-            <Image
-              className="right-0 absolute"
-              src={customer4}
-              alt="Anandh Michel"
-              width={180}
-              height={180}
-            />
+            <div className="right-0 absolute sm:w-[180px] sm:h-[180px] w-[130px] h-[130px]">
+              <Image className="w-full" src={customer4} alt="Anandh Michel" />
+            </div>
             <div className="p-5 flex h-full flex-col justify-around gap-y-5">
               <div className="flex">
                 <p className="text-[16px] font-semibold lg:w-[70%] w-[50%]">

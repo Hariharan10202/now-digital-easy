@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-items: betweem;
+  gap: 20px;
+  padding: 10px;
+  width: 100%;
+  background: linear-gradient(
+    90.37deg,
+    #d2d5fd 0.32%,
+    #d8daf8 22.3%,
+    #efe8e7 49.57%,
+    #fef3e2 99.68%
+  );
+}
+
+.cart {
+  width: 100%;
+}
+
+.cart > ol,
+.cart > ol > li > a {
+  background: transparent;
+}
+.cart > ol > li > a > span:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  font-size: 16px;
+}
+
+.cart > ol > li > a > span:last-child {
+  margin-top: 0;
+}
+
+.cart > ol > li::before {
+  border: 2px solid black;
+}

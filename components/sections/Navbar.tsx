@@ -6,7 +6,6 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
@@ -16,7 +15,7 @@ import {
 import Image from "next/image";
 import DomainSVG from "../../public/assets/navbar/domain.svg";
 import Logo from "../../public/assets/navbar/logo.svg";
-import Cart from "../../public/assets/navbar/cart.svg";
+import CartIcon from "../../public/assets/navbar/cart.svg";
 import DemoSVG from "../../public/assets/navbar/demo.svg";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -25,6 +24,8 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "../ui/hover-card";
+import Cart from "./Cart/Cart";
+import { Button } from "../ui/button";
 
 const Build: { title: string; href: string; description: string }[] = [
   {
@@ -96,6 +97,8 @@ const Grow: { title: string; href: string; description: string }[] = [
 ];
 
 export function Navbar() {
+  const [isOpen, setOpen] = React.useState<boolean>(false);
+
   return (
     <div className="flex items-center justify-between w-full relative bg-gradient-to-r py-3 px-10 from-[rgb(210,213,253)] to-[rgb(216,218,248)] via-[rgb(239,232,231)] to-[rgb(254,243,226)]">
       <div className="flex items-center gap-3">
@@ -275,21 +278,37 @@ export function Navbar() {
         <div className="lg:block hidden">
           <div className="flex items-center gap-5 pl-5">
             <div className="flex items-center gap-5">
-              <button className="outline-none py-2 px-3 text-bg-primary border-2 rounded-lg font-semibold border-bg-primary text-[14px]">
+              <Button
+                variant={"secondary"}
+                className="outline-none py-2 px-3 text-bg-primary border-2 rounded-lg font-semibold border-bg-primary text-[14px]"
+              >
                 Log In
-              </button>
-              <button className="outline-none py-2 px-3 text-white bg-bg-primary rounded-lg font-semibold text-[14px]">
+              </Button>
+              <Button className="outline-none py-2 px-3 text-white bg-bg-primary rounded-lg font-semibold text-[14px]">
                 Sign Up
-              </button>
+              </Button>
             </div>
           </div>
         </div>
         <div className="flex items-center gap-5">
-          <div className="w-7 h-7 flex justify-center items-center relative">
-            <Link href={"/cart"}>
-              <Image alt="cart" src={Cart} className="w-full" />
-            </Link>
-          </div>
+          <Sheet open={isOpen}>
+            <div className="w-7 h-7 flex justify-center items-center relative">
+              <SheetTrigger>
+                <Image
+                  alt="cart"
+                  src={CartIcon}
+                  className="w-full"
+                  onClick={() => setOpen(true)}
+                />
+              </SheetTrigger>
+            </div>
+            <SheetContent
+              closeIcon={false}
+              className="p-0 sm:max-w-[600px] w-full"
+            >
+              <Cart setOpen={setOpen} />
+            </SheetContent>
+          </Sheet>
         </div>
         <Sheet>
           <SheetTrigger className="block lg:hidden" asChild>
@@ -470,12 +489,15 @@ export function Navbar() {
               </NavigationMenu>
               <div className="flex items-center gap-5 pl-5">
                 <div className="flex items-center gap-5">
-                  <button className="outline-none py-2 px-3 text-bg-primary border-2 rounded-lg font-semibold border-bg-primary text-[14px]">
+                  <Button
+                    variant={"secondary"}
+                    className="outline-none py-2 px-3 text-bg-primary border-2 rounded-lg font-semibold border-bg-primary text-[14px]"
+                  >
                     Log In
-                  </button>
-                  <button className="outline-none py-2 px-3 text-white bg-bg-primary rounded-lg font-semibold text-[14px]">
+                  </Button>
+                  <Button className="outline-none py-2 px-3 text-white bg-bg-primary rounded-lg font-semibold text-[14px]">
                     Sign Up
-                  </button>
+                  </Button>
                 </div>
               </div>
             </div>
