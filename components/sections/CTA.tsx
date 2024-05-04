@@ -6,7 +6,7 @@ import Box from "../ui/Box";
 const CTA = () => {
   return (
     <Box>
-      <div className="py-10 lg:px-20 px-10 px flex justify-between rounded-3xl items-center bg-gradient-to-r from-[rgb(210,213,253)] to-[rgb(216,218,248)] via-[rgb(239,232,231)] to-[rgb(254,243,226)]">
+      <div className="md:py-10 lg:px-20 md:px-10 p-5 flex justify-between rounded-3xl items-center bg-gradient-to-r from-[rgb(210,213,253)] to-[rgb(216,218,248)] via-[rgb(239,232,231)] to-[rgb(254,243,226)]">
         <div className="flex flex-col lg:gap-y-5 gap-y-2">
           <span className="lg:text-[42px] text-[24px] font-extrabold font-sans">
             For what you are waiting for?
@@ -17,7 +17,7 @@ const CTA = () => {
           </span>
           <div>
             <button className="flex items-center justify-center gap-2 lg:px-10 px-5 lg:py-5 py-3 rounded-full bg-bg-primary">
-              <span className="text-white lg:text-xl text-[14px] font-extrabold">
+              <span className="text-white lg:text-xl text-[14px] lg:font-extrabold font-bold">
                 Start Now
               </span>
               <MdOutlineKeyboardArrowRight size={30} color="white" />

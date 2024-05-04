@@ -18,8 +18,8 @@ const Hero = () => {
               and efficiency to meet the ever-changing needs of today’s
               business.
             </p>
-            <button className="flex items-center justify-center gap-2 px-10 py-5 rounded-full bg-bg-primary">
-              <span className="text-white text-xl font-extrabold">
+            <button className="flex items-center justify-center gap-2 lg:px-10 px-5 lg:py-5 py-3 rounded-full bg-bg-primary">
+              <span className="text-white lg:text-xl text-[14px] lg:font-extrabold font-bold">
                 Get Started
               </span>
               <MdOutlineKeyboardArrowRight size={30} color="white" />

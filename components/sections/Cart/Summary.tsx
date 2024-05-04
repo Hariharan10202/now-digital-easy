@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/select";
 import { FcGoogle } from "react-icons/fc";
 import { Button } from "@/components/ui/button";
+import { FaRegTrashAlt } from "react-icons/fa";
 
 interface SummaryProps {
   setActiveIndex: (activeIndex: number) => void;
@@ -21,18 +22,22 @@ const Summary = ({ setActiveIndex, content }: SummaryProps) => {
       <table className="w-full">
         {content === "Summary" && (
           <tr className="border-b border-gray-300">
-            <th className="text-left py-3 pl-3">Product</th>
-            <th className="text-left py-3">Duration</th>
-            <th className="text-left py-3">Price</th>
+            <th className="text-left lg:text-[16px] text-sm py-3 pl-3">
+              Product
+            </th>
+            <th className="text-left lg:text-[16px] text-sm py-3">Duration</th>
+            <th className="text-left lg:text-[16px] text-sm py-3">Price</th>
           </tr>
         )}
         <tbody>
           <tr>
-            <td className="p-3 w-[300px]">
+            <td className="p-3 lg:w-[300px] w-fit">
               <div className="flex items-center gap-4 w-[70%]">
-                <FcGoogle size={24} />
+                <FcGoogle size={24} className="lg:block hidden" />
                 <div className="flex flex-col">
-                  <span className="font-semibold">Google workspace</span>
+                  <span className="font-semibold lg:text-[16px] text-[14px]">
+                    Google workspace
+                  </span>
                   <span className="text-sm">Business Starter</span>
                   <span className="text-sm text-[#0011FF]">
                     thedesignerclub.com
@@ -55,14 +60,21 @@ const Summary = ({ setActiveIndex, content }: SummaryProps) => {
                 </Select>
               </td>
             )}
-            <td className="font-sans">$223</td>
+            <td>
+              <div className="flex items-center gap-5  justify-end pr-2">
+                <span className="font-sans text-[16px] font-medium">$ 233</span>
+                <FaRegTrashAlt />
+              </div>
+            </td>
           </tr>
           <tr>
-            <td className="p-3 w-[300px]">
+            <td className="p-3 lg:w-[300px] w-fit">
               <div className="flex items-center gap-4 w-[70%]">
-                <FcGoogle size={24} />
+                <FcGoogle size={24} className="lg:block hidden" />
                 <div className="flex flex-col">
-                  <span className="font-semibold">Linux Hosting</span>
+                  <span className="font-semibold lg:text-[16px] text-[14px]">
+                    Linux Hosting
+                  </span>
                   <span className="text-sm">Beginner Plan</span>
                   <span className="text-sm text-[#0011FF]">
                     thedesignerclub.com
@@ -85,7 +97,12 @@ const Summary = ({ setActiveIndex, content }: SummaryProps) => {
                 </Select>
               </td>
             )}
-            <td className="font-sans">$223</td>
+            <td>
+              <div className="flex items-center gap-5 justify-end pr-2">
+                <span className="font-sans text-[16px] font-medium">$ 233</span>
+                <FaRegTrashAlt />
+              </div>
+            </td>
           </tr>
           {content === "Summary" && (
             <>
@@ -97,16 +114,16 @@ const Summary = ({ setActiveIndex, content }: SummaryProps) => {
                   Have a coupon code ?
                 </td>
                 <td className="text-right pr-20 font-medium">Subtotal</td>
-                <td>$ 1600</td>
+                <td className="text-right pr-2">$ 1600</td>
               </tr>
               <tr>
                 <td className="text-right pr-20 font-medium">Tax</td>
-                <td>$ 80</td>
+                <td className="text-right pr-2">$ 80</td>
               </tr>
               <tr className="border-t border-b border-gray-300">
                 <td></td>
                 <td className="text-right pr-20 font-bold py-3">Total</td>
-                <td className="font-bold py-3">$ 1600.00</td>
+                <td className="text-right font-bold py-3 pr-2">$ 1600.00</td>
               </tr>
             </>
           )}

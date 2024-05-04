@@ -125,8 +125,8 @@ export function Navbar() {
                 <div className="flex">
                   <div className="flex gap-5 p-5">
                     <div className="flex flex-col gap-y-10">
-                      <div className="w-[900px]">
-                        <div>
+                      <div>
+                        <div className="w-[900px]">
                           <h1 className="text-2xl font-extrabold mb-5">
                             Build
                           </h1>
@@ -159,8 +159,8 @@ export function Navbar() {
                           </div>
                         </div>
                       </div>
-                      <div className="w-[900px]">
-                        <div>
+                      <div>
+                        <div className="w-[900px]">
                           <h1 className="text-2xl font-extrabold mb-5">
                             Manage
                           </h1>
@@ -315,6 +315,7 @@ export function Navbar() {
             <GiHamburgerMenu size={30} className="cursor-pointer" />
           </SheetTrigger>
           <SheetContent
+            closeIcon={true}
             className="lg:hidden block sm:max-w-[500px]"
             side="right"
           >
@@ -331,21 +332,21 @@ export function Navbar() {
                         </NavigationMenuTrigger>
                       </HoverCardTrigger>
                       <HoverCardContent>
-                        <div className="flex">
-                          <div className="flex gap-5 p-10">
-                            <div className="flex flex-col gap-y-10">
-                              <div className="w-[900px]">
+                        <div className="flex flex-col overflow-scroll h-[100vh]">
+                          <div className="flex gap-5 p-5 flex-col">
+                            <div className="flex flex-col gap-y-5">
+                              <div>
                                 <div>
-                                  <h1 className="text-2xl font-extrabold mb-5">
+                                  <h1 className="text-[16px] font-extrabold mb-3">
                                     Build
                                   </h1>
-                                  <div className="flex items-center gap-x-10 gap-y-5 flex-wrap">
+                                  <div className="flex flex-col gap-x-3 gap-y-2">
                                     {Build.map((item, index) => (
                                       <div
                                         key={index}
                                         className="flex items-center gap-4 w-[400px] hover:bg-gray-400/10 rounded-lg transition-all cursor-pointer p-2 hover:scale-105"
                                       >
-                                        <div className="w-12 h-12 flex items-center justify-center">
+                                        <div className="w-8 h-8 flex items-center justify-center">
                                           <div className="bg-blue-600 p-2 rounded-lg">
                                             <Image
                                               alt="domain"
@@ -356,7 +357,7 @@ export function Navbar() {
                                           </div>
                                         </div>
                                         <div className="flex flex-col max-w-[500px]">
-                                          <span className="font-extrabold">
+                                          <span className="font-extrabold text-[16px]">
                                             {item.title}
                                           </span>
                                           <span className="font-semibold text-sm">
@@ -368,18 +369,18 @@ export function Navbar() {
                                   </div>
                                 </div>
                               </div>
-                              <div className="w-[900px]">
+                              <div>
                                 <div>
-                                  <h1 className="text-2xl font-extrabold mb-5">
+                                  <h1 className="text-[16px] font-extrabold mb-5">
                                     Manage
                                   </h1>
-                                  <div className="flex items-center gap-x-10 gap-y-5 flex-wrap">
+                                  <div className="flex flex-col gap-x-3 gap-y-2">
                                     {Manage.map((item, index) => (
                                       <div
                                         key={index}
                                         className="flex items-center gap-4 w-[400px] hover:bg-gray-400/10 rounded-lg transition-all cursor-pointer p-2 hover:scale-105"
                                       >
-                                        <div className="w-12 h-12 flex items-center justify-center">
+                                        <div className="w-8 h-8 flex items-center justify-center">
                                           <div className="bg-blue-600 p-2 rounded-lg">
                                             <Image
                                               alt="domain"
@@ -390,7 +391,7 @@ export function Navbar() {
                                           </div>
                                         </div>
                                         <div className="flex flex-col max-w-[500px]">
-                                          <span className="font-extrabold">
+                                          <span className="font-extrabold text-[16px]">
                                             {item.title}
                                           </span>
                                           <span className="font-semibold text-sm">
@@ -403,9 +404,9 @@ export function Navbar() {
                                 </div>
                               </div>
                             </div>
-                            <div className="w-[500px]">
+                            <div>
                               <div>
-                                <h1 className="text-2xl font-extrabold mb-5">
+                                <h1 className="text-[16px] font-extrabold mb-5">
                                   Grow
                                 </h1>
                                 <div className="flex flex-col gap-y-5 flex-wrap">
@@ -414,7 +415,7 @@ export function Navbar() {
                                       key={index}
                                       className="flex items-center gap-4 w-[400px] hover:bg-gray-400/10 rounded-lg transition-all cursor-pointer p-2 hover:scale-105"
                                     >
-                                      <div className="w-12 h-12 flex items-center justify-center">
+                                      <div className="w-8 h-8 flex items-center justify-center">
                                         <div className="bg-blue-600 p-2 rounded-lg">
                                           <Image
                                             alt="domain"
@@ -425,7 +426,7 @@ export function Navbar() {
                                         </div>
                                       </div>
                                       <div className="flex flex-col max-w-[500px]">
-                                        <span className="font-extrabold">
+                                        <span className="font-extrabold text-[16px]">
                                           {item.title}
                                         </span>
                                         <span className="font-semibold text-sm">
@@ -439,13 +440,9 @@ export function Navbar() {
                             </div>
                           </div>
                           <div className="h-full">
-                            <div className="w-[400px] h-[520px] bg-gradient-to-l from-[#D2D5FD] via-[#D8DAF8] to-[#FEF3E2] flex items-center justify-center">
-                              <div className="w-full h-full relative flex items-center justify-center">
-                                <Image
-                                  src={DemoSVG}
-                                  alt="demo"
-                                  className="w-[80%]"
-                                />
+                            <div className="w-full h-[520px] bg-gradient-to-l from-[#D2D5FD] via-[#D8DAF8] to-[#FEF3E2] flex items-center justify-center">
+                              <div className="w-[300px] h-full relative flex items-center justify-center">
+                                <Image src={DemoSVG} alt="demo" />
                               </div>
                             </div>
                           </div>
