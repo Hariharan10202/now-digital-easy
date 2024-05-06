@@ -124,86 +124,16 @@ export function Navbar() {
               <HoverCardContent>
                 <div className="flex">
                   <div className="flex gap-5 p-5">
-                    <div className="flex flex-col gap-y-10">
-                      <div>
-                        <div className="w-[900px]">
-                          <h1 className="text-2xl font-extrabold mb-5">
-                            Build
-                          </h1>
-                          <div className="flex items-center gap-x-10 gap-y-5 flex-wrap">
-                            {Build.map((item, index) => (
-                              <div
-                                key={index}
-                                className="flex items-center gap-4 w-[400px] hover:bg-gray-400/10 rounded-lg transition-all cursor-pointer p-2 hover:scale-105"
-                              >
-                                <div className="w-12 h-12 flex items-center justify-center">
-                                  <div className="bg-blue-600 p-2 rounded-lg">
-                                    <Image
-                                      alt="domain"
-                                      src={DomainSVG}
-                                      width={100}
-                                      height={100}
-                                    />
-                                  </div>
-                                </div>
-                                <div className="flex flex-col max-w-[500px]">
-                                  <span className="font-extrabold">
-                                    {item.title}
-                                  </span>
-                                  <span className="font-semibold text-sm">
-                                    {item.description}
-                                  </span>
-                                </div>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                      <div>
-                        <div className="w-[900px]">
-                          <h1 className="text-2xl font-extrabold mb-5">
-                            Manage
-                          </h1>
-                          <div className="flex items-center gap-x-10 gap-y-5 flex-wrap">
-                            {Manage.map((item, index) => (
-                              <div
-                                key={index}
-                                className="flex items-center gap-4 w-[400px] hover:bg-gray-400/10 rounded-lg transition-all cursor-pointer p-2 hover:scale-105"
-                              >
-                                <div className="w-12 h-12 flex items-center justify-center">
-                                  <div className="bg-blue-600 p-2 rounded-lg">
-                                    <Image
-                                      alt="domain"
-                                      src={DomainSVG}
-                                      width={100}
-                                      height={100}
-                                    />
-                                  </div>
-                                </div>
-                                <div className="flex flex-col max-w-[500px]">
-                                  <span className="font-extrabold">
-                                    {item.title}
-                                  </span>
-                                  <span className="font-semibold text-sm">
-                                    {item.description}
-                                  </span>
-                                </div>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="w-[500px]">
-                      <div>
-                        <h1 className="text-2xl font-extrabold mb-5">Grow</h1>
-                        <div className="flex flex-col gap-y-5 flex-wrap">
-                          {Grow.map((item, index) => (
+                    <div className="flex flex-col gap-y-5">
+                      <div className="w-[780px]">
+                        <h1 className="text-xl font-extrabold mb-3">Build</h1>
+                        <div className="flex items-center gap-3 flex-wrap">
+                          {Build.map((item, index) => (
                             <div
                               key={index}
-                              className="flex items-center gap-4 w-[400px] hover:bg-gray-400/10 rounded-lg transition-all cursor-pointer p-2 hover:scale-105"
+                              className="flex items-center gap-4 w-[350px] hover:bg-gray-400/10 rounded-lg transition-all cursor-pointer p-2 hover:scale-105"
                             >
-                              <div className="w-12 h-12 flex items-center justify-center">
+                              <div className="w-9 h-9 flex items-center justify-center">
                                 <div className="bg-blue-600 p-2 rounded-lg">
                                   <Image
                                     alt="domain"
@@ -217,7 +147,69 @@ export function Navbar() {
                                 <span className="font-extrabold">
                                   {item.title}
                                 </span>
-                                <span className="font-semibold text-sm">
+                                <span className="font-semibold text-xs">
+                                  {item.description}
+                                </span>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                      <div className="w-[780px]">
+                        <h1 className="text-xl font-extrabold mb-3">Manage</h1>
+                        <div className="flex items-center gap-3 flex-wrap">
+                          {Manage.map((item, index) => (
+                            <div
+                              key={index}
+                              className="flex items-center gap-4 w-[350px] hover:bg-gray-400/10 rounded-lg transition-all cursor-pointer p-2 hover:scale-105"
+                            >
+                              <div className="w-9 h-9 flex items-center justify-center">
+                                <div className="bg-blue-600 p-2 rounded-lg">
+                                  <Image
+                                    alt="domain"
+                                    src={DomainSVG}
+                                    width={100}
+                                    height={100}
+                                  />
+                                </div>
+                              </div>
+                              <div className="flex flex-col max-w-[500px]">
+                                <span className="font-extrabold">
+                                  {item.title}
+                                </span>
+                                <span className="font-semibold text-xs">
+                                  {item.description}
+                                </span>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                    <div className="w-[380px]">
+                      <div>
+                        <h1 className="text-xl font-extrabold mb-3">Grow</h1>
+                        <div className="flex flex-col gap-3 flex-wrap">
+                          {Grow.map((item, index) => (
+                            <div
+                              key={index}
+                              className="flex items-center gap-4 w-[350px] hover:bg-gray-400/10 rounded-lg transition-all cursor-pointer p-2 hover:scale-105"
+                            >
+                              <div className="w-9 h-9 flex items-center justify-center">
+                                <div className="bg-blue-600 p-2 rounded-lg">
+                                  <Image
+                                    alt="domain"
+                                    src={DomainSVG}
+                                    width={100}
+                                    height={100}
+                                  />
+                                </div>
+                              </div>
+                              <div className="flex flex-col">
+                                <span className="font-extrabold">
+                                  {item.title}
+                                </span>
+                                <span className="font-semibold text-xs">
                                   {item.description}
                                 </span>
                               </div>
@@ -228,7 +220,7 @@ export function Navbar() {
                     </div>
                   </div>
                   <div className="h-full">
-                    <div className="w-[400px] h-[520px] bg-gradient-to-l from-[#D2D5FD] via-[#D8DAF8] to-[#FEF3E2] flex items-center justify-center">
+                    <div className="w-[300px] h-[420px] bg-gradient-to-l from-[#D2D5FD] via-[#D8DAF8] to-[#FEF3E2] flex items-center justify-center">
                       <div className="w-full h-full relative flex items-center justify-center">
                         <Image src={DemoSVG} alt="demo" className="w-[80%]" />
                       </div>

@@ -102,7 +102,8 @@ const Business = () => {
             slidesPerView: 3,
           },
           1400: {
-            slidesPerView: 4,
+            slidesPerView: 3,
+            spaceBetween: 0,
           },
           1920: {
             slidesPerView: 5,

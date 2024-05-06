@@ -36,7 +36,7 @@ const Services = () => {
         </span>
       </div>
       <div className="flex py-10 lg:flex-row flex-col-reverse gap-10 lg:px-[120px]">
-        <div className="lg:flex-[2] min-h-[300px] border border-black flex items-center justify-center">
+        <div className="lg:flex-[1.6] min-h-[300px] border border-black flex items-center justify-center">
           GIF goes here
         </div>
         <div className="flex-1 flex flex-col gap-y-5">
@@ -53,7 +53,7 @@ const Services = () => {
               <div className="relative lg:w-[60px] w-[40px] lg:h-[60px] h-[40px] flex items-center justify-center">
                 <Image src={item.icon} alt={item.name} className="fill-white" />
               </div>
-              <h2 className="md:text-[24px] text-[16px] font-bold">
+              <h2 className="md:text-[20px] text-[16px] font-bold">
                 {item.name}
               </h2>
             </div>
