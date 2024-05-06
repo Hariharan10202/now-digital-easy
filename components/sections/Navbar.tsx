@@ -220,7 +220,7 @@ export function Navbar() {
                     </div>
                   </div>
                   <div className="h-full">
-                    <div className="w-[300px] h-[420px] bg-gradient-to-l from-[#D2D5FD] via-[#D8DAF8] to-[#FEF3E2] flex items-center justify-center">
+                    <div className="w-[300px] h-[550px] bg-gradient-to-l from-[#D2D5FD] via-[#D8DAF8] to-[#FEF3E2] flex items-center justify-center">
                       <div className="w-full h-full relative flex items-center justify-center">
                         <Image src={DemoSVG} alt="demo" className="w-[80%]" />
                       </div>

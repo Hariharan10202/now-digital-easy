@@ -20,7 +20,7 @@ const CardContent = ({ setActiveIndex, activeIndex }: CardContentProps) => {
         <Summary setActiveIndex={setActiveIndex} content="Summary" />
       ) : activeIndex == 1 ? (
         <>
-          {isUser ? (
+          {!isUser ? (
             <Login setUser={setUser} setActiveIndex={setActiveIndex} />
           ) : (
             <Signup setUser={setUser} />

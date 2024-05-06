@@ -6,7 +6,7 @@ import Box from "../ui/Box";
 const CTA = () => {
   return (
     <Box>
-      <div className="md:py-10 lg:px-20 md:px-10 p-5 flex justify-between rounded-3xl items-center bg-gradient-to-r from-[rgb(210,213,253)] to-[rgb(216,218,248)] via-[rgb(239,232,231)] to-[rgb(254,243,226)]">
+      <div className="md:py-10 lg:px-20 md:px-10 p-5 flex justify-between rounded-3xl items-center bg-gradient-to-l from-[rgb(210,213,253)] to-[rgb(216,218,248)] via-[rgb(239,232,231)] to-[rgb(254,243,226)]">
         <div className="flex flex-col lg:gap-y-5 gap-y-2 w-[40%]">
           <span className="lg:text-[42px] text-[24px] leading-[50px] font-[900] font-sans">
             For What You Are Waiting for?

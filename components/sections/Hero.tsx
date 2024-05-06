@@ -6,13 +6,13 @@ import Box from "../ui/Box";
 const Hero = () => {
   return (
     <Box className="bg-gradient-to-r from-[rgb(210,213,253)] to-[rgb(216,218,248)] via-[rgb(239,232,231)] to-[rgb(254,243,226)]">
-      <div className="lg:pb-20 pb-10">
+      <div className="lg:pb-20 pb-10 pt-10">
         <div className="flex gap-10 flex-col-reverse lg:flex-row">
           <div className="flex-[1.2] flex flex-col items-start md:gap-y-10 gap-y-5">
-            <span className="lg:text-[50px] leading-[60px] text-[30px] font-extrabold font-sans">
+            <span className="lg:text-[54px] leading-[60px] text-[30px] font-extrabold font-sans">
               Hey Business Owners Go Digital Effortlessly
             </span>
-            <p className="lg:text-2xl text-xl font-semibold leading-[40px] font-serif">
+            <p className="lg:text-[22px] text-xl font-semibold leading-[40px] font-serif">
               Stop being static! Scale your business by going digital, the easy
               way, with NDE. We’re technology-enabled and structured for speed
               and efficiency to meet the ever-changing needs of today’s

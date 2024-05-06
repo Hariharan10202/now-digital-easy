@@ -19,7 +19,7 @@ const Customers = () => {
       <div className="flex flex-col gap-y-5">
         <div className="flex gap-5 lg:flex-row flex-col">
           {/* Customer 1 */}
-          <div className="h-fit bg-gradient-to-r from-[rgb(210,213,253)] to-[rgb(216,218,248)] via-[rgb(239,232,231)] to-[rgb(254,243,226)] relative flex-[1.2]">
+          <div className="md:h-[300px] h-fit bg-gradient-to-r from-[rgb(210,213,253)] to-[rgb(216,218,248)] via-[rgb(239,232,231)] to-[rgb(254,243,226)] relative flex-[1.2]">
             <div className="right-0 absolute sm:w-[180px] sm:h-[180px] w-[130px] h-[130px]">
               <Image className="w-full" src={customer1} alt="Anandh Michel" />
             </div>

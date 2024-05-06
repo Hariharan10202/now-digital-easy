@@ -37,7 +37,7 @@ const Login = ({ setUser, setActiveIndex }: LoginProps) => {
             <p className="mt-3">
               New to NowDigitalEasy?
               <span
-                onClick={() => setUser(false)}
+                onClick={() => setUser(true)}
                 className="ml-2 underline text-bg-primary font-semibold"
               >
                 Sign up here

@@ -78,7 +78,7 @@ const Business = () => {
   return (
     <div className="lg:px-20 sm:p-10 p-3">
       <div className="mx-auto w-[80%] lg:w-[60%] mb-10">
-        <h1 className="md:text-[60px] text-[26px] font-sans font-extrabold text-center">
+        <h1 className="md:text-[60px] leading-[70px] text-[26px] font-sans font-extrabold text-center">
           <span className="text-bg-primary">Build</span> Your Business In One
           Single Platform
         </h1>
@@ -120,7 +120,7 @@ const Business = () => {
           <SwiperSlide key={list.id}>
             <div className={styles.card}>
               <div className={styles.header}>
-                <div className="absolute top-[30%] left-5 flex items-center justify-center gap-10">
+                <div className="absolute top-[30%] left-5 flex items-center justify-between gap-10">
                   <h1 className="text-2xl text-white font-extrabold">
                     {list.title}
                   </h1>

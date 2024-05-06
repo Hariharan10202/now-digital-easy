@@ -17,8 +17,8 @@ const Testimonials = () => {
           business in the digital landscape.
         </p>
       </div>
-      <div className="relative flex items-center justify-center w-full 2xl:h-[100vh] xl:h-[80vh] lg:h-[60vh] h-fit overflow-hidden p-4">
-        <Image src={Platform} alt="platform" className="lg:w-[80%] w-full" />
+      <div className="relative flex items-center justify-center w-full 2xl:h-[132vh] xl:h-[80vh] lg:h-[60vh] h-fit overflow-hidden p-4">
+        <Image src={Platform} alt="platform" className="lg:w-[100%] w-full" />
       </div>
     </Box>
   );
